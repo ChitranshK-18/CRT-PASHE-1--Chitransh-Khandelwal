@@ -1,13 +1,16 @@
 #include<iostream>
 using namespace std;
 
-int main(){
-    int x,y;
-    x=8;
-    y=70;
-    int temp;
-    temp *ptr = &x;
-    temp *ptr = &y;
-    x=temp;
-    temp=y;
+
+void swap(int *a, int *b) {
+    int temp = *a;
+    *a = *b;
+    *b = temp;
+}
+
+int main() {
+    int x = 20, y = 70;
+    swap(&x, &y);
+
+    cout << x << " " << y;
 }
