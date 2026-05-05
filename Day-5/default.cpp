@@ -1,17 +1,14 @@
 #include<iostream>
 using namespace std;
 
-int x=5;
-int y=7;
 
-int var(int x, int y){
-    return x, y;
+int var(int x=6){
+    return x;
 }
 
 int main(){
-    int z;
-    z = x*y;
-    cout<<var<<"Product is:"<<z<<endl;
+    int x;
+    cout<<"Product is:"<<var()<<endl;
 
     return 0;
 }
